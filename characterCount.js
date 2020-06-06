@@ -3,7 +3,9 @@
  * the count of each character in the string
  */
 
-// Eg: input: deepesh output: { d:1, e:3, p:1, s:1, h:1 }
+// Example
+// input: i fell In Love with Javascript
+// output: { f: 1, e: 2, l: 3, n: 1, o: 1, v: 2, w: 1, t: 2, h: 1, j: 1, a: 2, s: 1, c: 1, r: 1, p: 1 }
 
 /**
  * step1: create an object
