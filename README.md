@@ -51,3 +51,4 @@ Access - O(1)
 # Problem Solving Patterns
 
 Frequency Counters - O(n) [mostly with objects]
+Multiple Pointers

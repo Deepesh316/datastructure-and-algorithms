@@ -43,6 +43,7 @@ function anagramCheckFirstApproach(str1, str2) {
 }
 
 console.log(anagramCheckFirstApproach("cinemano", "icemanno")); // expect true
+console.log(anagramCheckFirstApproach("", "")); // expect true
+console.log(anagramCheckFirstApproach("anagram", "nagaram")); // expect true
 console.log(anagramCheckFirstApproach("done", "one")); // expect false
-console.log(anagramCheckFirstApproach("", "")); // expect false
 console.log(anagramCheckFirstApproach("aaz", "zza")); // expect false
