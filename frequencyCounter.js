@@ -30,6 +30,11 @@ function sameFirstApproach(arr1, arr2) {
   return true;
 }
 
+/**
+ * Approach using multiple for of which is having complexity of O(n)
+ * @param {*} arr1
+ * @param {*} arr2
+ */
 function sameSecondApproach(arr1, arr2) {
   let frequencyCounter1 = {};
   let frequencyCounter2 = {};
