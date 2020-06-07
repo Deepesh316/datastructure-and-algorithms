@@ -47,3 +47,7 @@ forEach / map / filter / reduce / etc.. - O(N)
 
 Searching - O(N)\
 Access - O(1)
+
+# Problem Solving Patterns
+
+Frequency Counters - O(n) [mostly with objects]
