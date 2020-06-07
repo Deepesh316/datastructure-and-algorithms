@@ -17,10 +17,9 @@
  * step7: return the object
  */
 
-function characterCount(str) {
+function characterCountFirstApproach(str) {
   let obj = {};
   str = str.split(" ").join("").toLowerCase();
-  console.log("str", str);
   for (let i = 0; i < str.length; i++) {
     if (obj.hasOwnProperty(str.charAt(i))) {
       obj[str.charAt(i)] += 1;
@@ -31,4 +30,20 @@ function characterCount(str) {
   return obj;
 }
 
-console.log(characterCount("i fell In Love with Javascript"));
+/**
+ * Simpler way using regex & conditional operator
+ * @param {*} str
+ */
+function characterCountSecondApproach(str) {
+  let obj = {};
+  const charRegex = /^[a-z0-9]$/;
+  for (let char of str) {
+    if (charRegex.test(char)) {
+      obj[char] = obj[char] ? ++obj[char] : 1;
+    }
+  }
+  return obj;
+}
+
+console.log(characterCountFirstApproach("i fell In Love with Javascript"));
+console.log(characterCountSecondApproach("Hello Deepesh how are yOu"));
