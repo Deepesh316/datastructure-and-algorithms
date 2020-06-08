@@ -52,3 +52,4 @@ Access - O(1)
 
 Frequency Counters - O(n) [mostly with objects]
 Multiple Pointers
+Sliding Window pattern
