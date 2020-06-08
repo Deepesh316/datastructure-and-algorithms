@@ -28,4 +28,23 @@ function maxSubArraySumFirstApproach(arr1, n) {
   return maxVal;
 }
 
+function maxSubArraySumSecondApproach(arr, n) {
+  if (arr.length < n) return null;
+
+  let maxVal = 0;
+  let temp = 0;
+  for (let i = 0; i < n; i++) {
+    maxVal += arr[i];
+  }
+  temp = maxVal;
+
+  for (let i = n; i < arr.length; i++) {
+    temp = temp + arr[i] - arr[i - n];
+    maxVal = Math.max(temp, maxVal);
+  }
+
+  return maxVal;
+}
+
 console.log(maxSubArraySumFirstApproach([1, 2, 5, 2, 8, 1, 5], 2));
+console.log(maxSubArraySumSecondApproach([1, 2, 5, 2, 8, 1, 5], 2));
