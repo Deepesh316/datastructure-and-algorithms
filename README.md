@@ -59,3 +59,7 @@ Sliding Window pattern
 Take care of two things
 a) Base Case
 b) Different Inputs
+
+# Searching Algorithms
+
+Linear Search - O(n)
