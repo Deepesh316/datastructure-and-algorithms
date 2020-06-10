@@ -109,3 +109,41 @@ isPalindrome("foobar"); // false
 isPalindrome("tacocat"); // true
 isPalindrome("amanaplanacanalpanama"); // true
 isPalindrome("amanaplanacanalpandemonium"); // false
+
+/**
+ * Write a recursive function called someRecursive which accepts an array and a callback.
+ * The function returns true if a single value in the array returns true when passed to the callback.
+ * Otherwise it returns false.
+ */
+
+function someRecursive(arr, cb) {
+  // base case
+  if (arr.length === 0) return false;
+
+  const isGood = cb(arr[0]);
+  if (isGood) return true;
+  return someRecursive(arr.slice(1), cb);
+}
+
+const isOdd = (val) => val % 2 !== 0;
+
+someRecursive([1, 2, 3, 4], isOdd); // true
+someRecursive([4, 6, 8, 9], isOdd); // true
+someRecursive([4, 6, 8], isOdd); // false
+someRecursive([4, 6, 8], (val) => val > 10); // false
+
+/**
+ * Write a recursive function called flatten which accepts an array of arrays and
+ * returns a new array with all values flattened.
+ */
+
+function flatten(arr) {
+  if (!Array.isArray(arr) || !arr.length) return [].concat(arr);
+  const [val, ...rest] = arr;
+  return [...flatten(val), ...flatten(rest)];
+}
+
+flatten([1, 2, 3, [4, 5]]); // [1, 2, 3, 4, 5]
+flatten([1, [2, [3, 4], [[5]]]]); // [1, 2, 3, 4, 5]
+flatten([[1], [2], [3]]); // [1,2,3]
+flatten([[[[1], [[[2]]], [[[[[[[3]]]]]]]]]]); // [1,2,3]
