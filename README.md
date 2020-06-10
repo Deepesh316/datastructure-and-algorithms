@@ -53,3 +53,9 @@ Access - O(1)
 Frequency Counters - O(n) [mostly with objects]
 Multiple Pointers
 Sliding Window pattern
+
+# Recursion
+
+Take care of two things
+a) Base Case
+b) Different Inputs
