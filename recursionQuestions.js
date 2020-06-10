@@ -147,3 +147,26 @@ flatten([1, 2, 3, [4, 5]]); // [1, 2, 3, 4, 5]
 flatten([1, [2, [3, 4], [[5]]]]); // [1, 2, 3, 4, 5]
 flatten([[1], [2], [3]]); // [1,2,3]
 flatten([[[[1], [[[2]]], [[[[[[[3]]]]]]]]]]); // [1,2,3]
+
+/**
+ * Write a recursive function called capitalizeFirst.
+ * Given an array of strings, capitalize the first letter of each string in the array.
+ */
+
+let newArr = [];
+function capitalizeFirst(arr) {
+  if (arr.length === 0) return newArr;
+  const cap = arr[0].charAt(0).toUpperCase() + arr[0].slice(1);
+  newArr.push(cap);
+  return capitalizeFirst(arr.slice(1));
+}
+
+// Another approach
+const iterativeCapitalize = (arr) => {
+  return arr.map((el) => {
+    return el.replace(el[0], el[0].toUpperCase());
+  });
+};
+
+capitalizeFirst(["car", "taco", "banana"]); // ['Car','Taco','Banana']
+iterativeCapitalize(["car", "taco", "banana"]); // ['Car','Taco','Banana']
