@@ -63,3 +63,4 @@ b) Different Inputs
 # Searching Algorithms
 
 Linear Search - O(n)
+Binary Search - Works only on sorted arrays - O(logn)
