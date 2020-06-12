@@ -69,4 +69,4 @@ Binary Search - Works only on sorted arrays - O(logn)
 
 Bubble Sort => O(n^2) but if nearly sorted then it will be O(n)
 Selection Sort => O(n^2)
-Insertion Sort
+Insertion Sort => O(n^2)
