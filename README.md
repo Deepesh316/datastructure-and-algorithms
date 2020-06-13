@@ -71,8 +71,8 @@ Binary Search - Works only on sorted arrays - O(logn)
 
 # Sorting Algorithms
 
-Bubble Sort => O(n^2) but if nearly sorted then it will be O(n), Space Complexity will be O(1)
-Selection Sort => O(n^2), Space Complexity will be O(1)
-Insertion Sort => O(n^2), Space Complexity will be O(1)
-Merge Sort => Time Complexity: O(n log n) , Space Complexity: O(n)
+Bubble Sort => O(n^2) but if nearly sorted then it will be O(n), Space Complexity will be O(1)\
+Selection Sort => O(n^2), Space Complexity will be O(1)\
+Insertion Sort => O(n^2), Space Complexity will be O(1)\
+Merge Sort => Time Complexity: O(n log n) , Space Complexity: O(n)\
 Quick Sort => Time Complexity: O(n^2) , Space Complexity:O(log n)
