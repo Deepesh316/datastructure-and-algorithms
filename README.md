@@ -2,6 +2,10 @@
 
 Learn Data Structure and Algorithms using Javascript
 
+# Important links for reference:
+
+https://www.bigocheatsheet.com/
+
 # Time Complexity Rules of thumb
 
 O(1) < O(logn) < O(n) < O(n logn) < O(n^2)
@@ -67,6 +71,7 @@ Binary Search - Works only on sorted arrays - O(logn)
 
 # Sorting Algorithms
 
-Bubble Sort => O(n^2) but if nearly sorted then it will be O(n)
-Selection Sort => O(n^2)
-Insertion Sort => O(n^2)
+Bubble Sort => O(n^2) but if nearly sorted then it will be O(n), Space Complexity will be O(1)
+Selection Sort => O(n^2), Space Complexity will be O(1)
+Insertion Sort => O(n^2), Space Complexity will be O(1)
+Merge Sort => Time Complexity: O(n log n) , Space Complexity: O(n)
